@@ -18,7 +18,7 @@ function restart(){
     setListeners();
     risultato.classList.add("hidden");
     window.scrollTo({top:0,behavior:"smooth"});
-    location.reload();
+    //location.reload();
 }
 
 // In questa funzione tramite la risposta trovata in checkboxes, assegno sia il titolo che il contenuto al risultato che verrà visualizzato a pié di pagina
