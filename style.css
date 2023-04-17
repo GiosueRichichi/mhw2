@@ -1,0 +1,140 @@
+/* TODO: inserite il CSS necessario per completare il MHW! */
+
+:root {
+    --grid-size: 700px;
+}
+  
+body{
+    background-color: #050A30;
+}
+
+h1{
+    color: white;
+}
+
+p{
+    color: white;
+}
+
+.question-name{
+    background-size: cover;
+    background-position:center ;
+    background-repeat: no-repeat;
+    border-radius: 2%;
+    background-image: url(./images/Logo-Magic-The-Gathering.jpg);
+}
+
+.question-name h1{
+    background-color: inherit;
+}
+
+.choice-grid {
+    align-content: space-between;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: max-content;
+    width: calc(--grid-size/3);
+}
+
+.choice-grid div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    height: var(--square-size);
+    box-sizing: border-box;
+    width: 32.5%;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #dcdcdc;
+    background-color: #f4f4f4;
+    border-radius: 3%;
+    cursor: pointer;
+}
+
+.choice-grid div img{
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.checked{
+    margin-top: 5px;
+    height: 20px;
+    width: 20px;
+}
+
+.inziale{
+    opacity: 1;
+}
+
+.chosenBox{
+    background-color:#cfe3ff;
+}
+
+.nchosenBox{
+    opacity: 0.6;
+}
+
+.hidden{
+    display: none;
+}
+
+.risultato{
+    margin-top: 40px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    border: 1px solid #cbcbd4;
+    margin-bottom: 20px;
+    
+}
+
+.risultato h1{
+    margin-bottom: 18px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.risultato p{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.risultato div{
+    display: flex;
+    border: 1px solid #cbcbd4;
+    cursor: pointer;
+    height: 50px;
+    justify-content:center;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: white;
+}
+
+.risultato div:hover{
+    background-color: #e0e0e0;
+    color: inherit;
+}
+
+@media (max-width:100%) {
+    body{
+        zoom: 100%;
+    }
+}
+
+
+@media (max-width: 700px){
+    article{
+      width: 95%;
+    }
+    header div span{
+      display: none;
+    }
+  }
+
+@media (max-width: 500px) {
+    .choice-grid div{
+        width: 49%;
+    }
+}
